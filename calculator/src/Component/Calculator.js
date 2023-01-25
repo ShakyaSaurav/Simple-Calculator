@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import './Calculator.css'
 
-const Calculator = () => {
+const Calculator = (prop) => {
   const [result, setResult] = useState(0);
   const handleClick=(e)=>{
     setResult(result+(e.target.name));
@@ -19,11 +19,13 @@ try{
 }catch(err){
     setResult('error')
 }
-  
+console.log(prop.theme);
   }
   
     return (
-    <div className='container'>
+    <div className='Container'>
+    <div className={prop.theme}>
+      
         <form>
             <input type='text' value={result}/>
         </form>
@@ -47,6 +49,7 @@ try{
             <button name='.' onClick={handleClick}>.</button>
             <button className='highlight' onClick={calculate} id='result'>=</button>
         </div>
+    </div>
     </div>
   )
 }
