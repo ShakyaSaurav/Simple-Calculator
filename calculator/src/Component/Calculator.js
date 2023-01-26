@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import './Calculator.css'
+import './Calculator1.css'
 
 const Calculator = (prop) => {
   const [result, setResult] = useState(0);
@@ -19,12 +19,13 @@ try{
 }catch(err){
     setResult('error')
 }
-console.log(prop.theme);
+
   }
   
     return (
     <div className='Container'>
     <div className={prop.theme}>
+    {prop.theme}
       
         <form>
             <input type='text' value={result}/>

@@ -3,15 +3,13 @@ import './App.css';
 import Calculator from './Component/Calculator';
 import Darkmode from './Component/Darkmode';
 function App() {
-  let themer='';
+  let theme='';
   const getData=(para)=> {
-    themer=para;
-    alert(themer);
+    theme=para;
   }
-  const theme="container";
   return (
     <div>
-      <Calculator theme={theme}/>
+      <Calculator themer={theme}/>
       <Darkmode onClick={getData}/>
     </div>
   );
