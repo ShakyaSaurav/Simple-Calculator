@@ -2,16 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import Calculator from './Component/Calculator';
 import Darkmode from './Component/Darkmode';
+import { useState } from 'react';
 function App() {
-  let theme='';
+  const [Theme, setTheme] = useState('')
   const getData=(para)=> {
-    theme=para;
-    console.log(theme)
+    setTheme(para)
   }
   return (
     <div>
-      <Calculator themer={theme}/>
       <Darkmode onClick={getData}/>
+      <Calculator themer={Theme}/>
     </div>
   );
 }

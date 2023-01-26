@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './Calculator.css'
 
 const Calculator = (props) => {
+  console.log(props.themer);
   const [result, setResult] = useState(0);
   const handleClick=(e)=>{
     setResult(result+(e.target.name));
@@ -23,11 +24,12 @@ try{
   }
   
     return (
-    <div className='Container'>
+    
+      <div className={props.themer}>
     
       
         <form>
-            <input type='text' value={result}/>
+            <input className='inPut' type='text' value={result}/>
         </form>
         <div className="keypad">
             <button className='highlight' onClick={clear} id='clear'>clear</button>
@@ -49,6 +51,7 @@ try{
             <button name='.' onClick={handleClick}>.</button>
             <button className='highlight' onClick={calculate} id='result'>=</button>
         </div>
+        
     </div>
    
   )
