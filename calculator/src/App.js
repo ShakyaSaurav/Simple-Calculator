@@ -6,6 +6,7 @@ function App() {
   let theme='';
   const getData=(para)=> {
     theme=para;
+    console.log(theme)
   }
   return (
     <div>

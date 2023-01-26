@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import './Calculator1.css'
+import './Calculator.css'
 
-const Calculator = (prop) => {
+const Calculator = (props) => {
   const [result, setResult] = useState(0);
   const handleClick=(e)=>{
     setResult(result+(e.target.name));
@@ -19,19 +19,18 @@ try{
 }catch(err){
     setResult('error')
 }
-
+  
   }
   
     return (
     <div className='Container'>
-    <div className={prop.theme}>
-    {prop.theme}
+    
       
         <form>
             <input type='text' value={result}/>
         </form>
         <div className="keypad">
-            <button className='highlight' onClick={clear} id='clear'>Clear</button>
+            <button className='highlight' onClick={clear} id='clear'>clear</button>
             <button className='highlight' onClick={backspace} id='backspace'>C</button>
             <button className='highlight' name='/' onClick={handleClick}>&divide;</button>
             <button name='7' onClick={handleClick}>7</button>
@@ -51,7 +50,7 @@ try{
             <button className='highlight' onClick={calculate} id='result'>=</button>
         </div>
     </div>
-    </div>
+   
   )
 }
 

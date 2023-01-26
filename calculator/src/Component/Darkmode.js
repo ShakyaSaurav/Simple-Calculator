@@ -11,7 +11,6 @@ const Darkmode = (props) => {
         } else {
           setTheme('light');
         }
-        console.log(theme);
         props.onClick(theme);
     }
   return (
