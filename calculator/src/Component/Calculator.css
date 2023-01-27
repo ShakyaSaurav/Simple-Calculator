@@ -16,7 +16,8 @@ body{
     margin:0 auto;
     width: 256px;
     text-align: center;
-    border: 10px solid #313139f1;
+    border: 10px solid #070708f1;
+    background-color: rgb(44, 45, 53);
 
 }
 .dark .keypad{
@@ -78,8 +79,8 @@ button:active{
     margin:0 auto;
     width: 256px;
     text-align: center;
-    border: 10px solid #131860f1;
-    background: #25aeaa
+    border: 10px solid #5d5179;
+    background: #81f085;
 
 }
 .light .keypad{
@@ -90,9 +91,9 @@ button:active{
 .light input[type='text']{
     height: 75px;
     width:249px;
-    background-color: rgb(114, 208, 234);
+    background-color: #EDFFAB;
     border: 0px;
-    color: rgb(184, 11, 237);
+    color: #5d5179;
     text-align: right;
     font-size: 25px;
     font-weight: 500;
@@ -101,7 +102,7 @@ button:active{
 .light #clear{
     grid-column:1/3;
     grid-row: 1;
-    color: rgb(165, 80, 235);
+    color: azure;
     background:#c70e0e;
 }
 .light #result{
@@ -119,7 +120,7 @@ button:active{
     border: none;
     border-radius:5px;
     cursor: pointer;
-    background:#6c6e7a;
+    background:#89608E;
     color:azure;
     font-weight:500;
 }
