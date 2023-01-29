@@ -3,7 +3,8 @@ import { useState } from 'react'
 import './Calculator.css'
 
 const Calculator = (props) => {
-  console.log(props.themer);
+  const theme= "light";
+  const theme= props.themer;
   const [result, setResult] = useState(0);
   const handleClick=(e)=>{
     setResult(result+(e.target.name));
@@ -25,7 +26,8 @@ try{
   
     return (
     
-      <div className={props.themer}>
+      <div className={theme}>
+        <div className ='container'>
     
       
         <form>
@@ -50,6 +52,7 @@ try{
             <button name='0' onClick={handleClick}>0</button>
             <button name='.' onClick={handleClick}>.</button>
             <button className='highlight' onClick={calculate} id='result'>=</button>
+        </div>
         </div>
         
     </div>

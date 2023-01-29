@@ -9,6 +9,9 @@ body{
     align-items: center;
 }
 .dark{
+
+}
+.dark .container{
     top:50%;
     left:50%;
     position:absolute;
