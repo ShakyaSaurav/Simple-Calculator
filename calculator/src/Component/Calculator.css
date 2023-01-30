@@ -5,9 +5,11 @@
 }
 body{
     display: flex;
+    height:100vh;
     justify-content: center;
     align-items: center;
     color:red;
+    background-color:#1A1A1A;
 }
 .dark{
 
