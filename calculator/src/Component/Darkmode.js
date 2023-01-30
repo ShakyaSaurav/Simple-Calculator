@@ -15,7 +15,7 @@ const Darkmode = (props) => {
     }
   return (
     <div>
-        <button onClick={()=>{
+        <button className='toggle' onClick={()=>{
           toggle();
           
           }}>Toggle Theme</button>

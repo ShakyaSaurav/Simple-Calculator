@@ -27,8 +27,6 @@ try{
     
       <div className={props.themer||'dark'}>
         <div className ='container'>
-    
-      
         <form>
             <input className='inPut' type='text' value={result}/>
         </form>
